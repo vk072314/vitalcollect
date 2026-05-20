@@ -1178,6 +1178,68 @@ const state = {
 const MONTH_NAMES = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 const MONTH_ABBR  = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
 
+
+// =====================================================
+// Embedded baseline data (Q4 FY26: Nov 2025 – Feb 2026)
+// Auto-loads on page open. Cleared by Clear-all (refresh to restore).
+// =====================================================
+const BASELINE_AGGREGATES = [{"m":"November 2025","s":"For Coding to Verified","o":"CHESAPEAKE TOXICOLOGY RESOURCES, LLC","M":52},{"m":"November 2025","s":"For Coding to Verified","o":"FREEDOM PATHOLOGY","M":1080},{"m":"November 2025","s":"For Coding to Verified","o":"GOLD COAST DIAGNOSTICS, LLC","M":1694},{"m":"November 2025","s":"For Coding to Verified","o":"HDX LABS LLC","M":1},{"m":"November 2025","s":"For Coding to Verified","o":"LONG ISLAND PATHOLOGY","M":378,"X":3,"A":7},{"m":"November 2025","s":"For Coding to Verified","o":"P4 CLINICAL LLC","M":544},{"m":"November 2025","s":"For Coding to Verified","o":"PLATINUM PATHOLOGY, PLLC","M":516,"X":9,"A":6},{"m":"November 2025","s":"For Coding to Verified","o":"SHEPARD HEALTH LLC","M":445},{"m":"November 2025","s":"For Coding to Verified","o":"STRAND DIAGNOSTICS","M":138},{"m":"November 2025","s":"For Coding to Verified","o":"SUPERB DIAGNOSTICS LLC","M":1931},{"m":"November 2025","s":"For Coding to Verified","o":"THERANOSTIX INC.","M":400,"X":1,"A":32},{"m":"November 2025","s":"For Coding to Verified","o":"WISE DIAGNOSTIC SYSTEMS","M":765},{"m":"December 2025","s":"For Coding to Verified","o":"CHESAPEAKE TOXICOLOGY RESOURCES, LLC","M":85},{"m":"December 2025","s":"For Coding to Verified","o":"CONNECTICUT PATHOLOGY LABORATORIES, INC.","M":2},{"m":"December 2025","s":"For Coding to Verified","o":"FREEDOM PATHOLOGY","M":1096},{"m":"December 2025","s":"For Coding to Verified","o":"GOLD COAST DIAGNOSTICS, LLC","M":2667},{"m":"December 2025","s":"For Coding to Verified","o":"LONG ISLAND PATHOLOGY","M":278,"A":1},{"m":"December 2025","s":"For Coding to Verified","o":"P4 CLINICAL LLC","M":787},{"m":"December 2025","s":"For Coding to Verified","o":"PLATINUM PATHOLOGY, PLLC","M":165,"A":1},{"m":"December 2025","s":"For Coding to Verified","o":"SHEPARD HEALTH LLC","M":428},{"m":"December 2025","s":"For Coding to Verified","o":"STRAND DIAGNOSTICS","M":20},{"m":"December 2025","s":"For Coding to Verified","o":"SUPERB DIAGNOSTICS LLC","M":3009},{"m":"December 2025","s":"For Coding to Verified","o":"THERANOSTIX INC.","M":349,"A":2},{"m":"December 2025","s":"For Coding to Verified","o":"WISE DIAGNOSTIC SYSTEMS","M":748},{"m":"January 2026","s":"For Coding to Verified","o":"CHESAPEAKE TOXICOLOGY RESOURCES, LLC","M":65},{"m":"January 2026","s":"For Coding to Verified","o":"EMERITUSDX","M":1},{"m":"January 2026","s":"For Coding to Verified","o":"FREEDOM PATHOLOGY","M":596},{"m":"January 2026","s":"For Coding to Verified","o":"GOLD COAST DIAGNOSTICS, LLC","M":1960},{"m":"January 2026","s":"For Coding to Verified","o":"LONG ISLAND PATHOLOGY","M":143},{"m":"January 2026","s":"For Coding to Verified","o":"P4 CLINICAL LLC","M":2398},{"m":"January 2026","s":"For Coding to Verified","o":"PLATINUM PATHOLOGY, PLLC","M":24},{"m":"January 2026","s":"For Coding to Verified","o":"SHEPARD HEALTH LLC","M":336},{"m":"January 2026","s":"For Coding to Verified","o":"SUPERB DIAGNOSTICS LLC","M":614},{"m":"January 2026","s":"For Coding to Verified","o":"THERANOSTIX INC.","M":61},{"m":"January 2026","s":"For Coding to Verified","o":"WISE DIAGNOSTIC SYSTEMS","M":712},{"m":"February 2026","s":"For Coding to Verified","o":"SPECIMEN LABORATORY","M":1,"X":1,"A":1},{"m":"February 2026","s":"For Coding to Verified","o":"FREEDOM PATHOLOGY","M":1015},{"m":"February 2026","s":"For Coding to Verified","o":"GOLD COAST DIAGNOSTICS, LLC","M":2811},{"m":"February 2026","s":"For Coding to Verified","o":"P4 CLINICAL LLC","M":4735},{"m":"February 2026","s":"For Coding to Verified","o":"THERANOSTIX INC.","M":60},{"m":"February 2026","s":"For Coding to Verified","o":"AERODIAGNOSTICS LLC","M":1},{"m":"February 2026","s":"For Coding to Verified","o":"SHEPARD HEALTH LLC","M":516},{"m":"February 2026","s":"For Coding to Verified","o":"PLATINUM PATHOLOGY, PLLC","M":24},{"m":"February 2026","s":"For Coding to Verified","o":"WISE DIAGNOSTIC SYSTEMS","M":734},{"m":"February 2026","s":"For Coding to Verified","o":"SUPERB DIAGNOSTICS LLC","M":51},{"m":"February 2026","s":"For Coding to Verified","o":"LONG ISLAND PATHOLOGY","M":81},{"m":"February 2026","s":"For Coding to Verified","o":"EMERITUSDX","M":45},{"m":"February 2026","s":"For Coding to Verified","o":"CHESAPEAKE TOXICOLOGY RESOURCES, LLC","M":57},{"m":"November 2025","s":"New to ClientBill","o":"AMERICAN MOLECULAR LABORATORIES INC","M":91},{"m":"November 2025","s":"New to ClientBill","o":"BRIDGE DERMATOPATHOLOGY SERVICES PLLC","M":1},{"m":"November 2025","s":"New to ClientBill","o":"EMERITUSDX","M":484,"A":110},{"m":"November 2025","s":"New to ClientBill","o":"FREEDOM PATHOLOGY","M":1},{"m":"November 2025","s":"New to ClientBill","o":"GOLD COAST DIAGNOSTICS, LLC","M":8},{"m":"November 2025","s":"New to ClientBill","o":"LONG ISLAND PATHOLOGY","M":1},{"m":"November 2025","s":"New to ClientBill","o":"P4 CLINICAL LLC","M":335,"A":2},{"m":"November 2025","s":"New to ClientBill","o":"PALM PATHOLOGY MEDICAL GROUP, A PROFESSIONAL CORPORATION","M":4},{"m":"November 2025","s":"New to ClientBill","o":"PLATINUM PATHOLOGY, PLLC","M":14},{"m":"November 2025","s":"New to ClientBill","o":"RABKIN DERMATOPATHOLOGY LABORATORY, PC","M":14,"A":145},{"m":"November 2025","s":"New to ClientBill","o":"SHEPARD HEALTH LLC","M":236},{"m":"November 2025","s":"New to ClientBill","o":"SOPHORA DIAGNOSTIC LABORATORY, INC.","M":402},{"m":"November 2025","s":"New to ClientBill","o":"SUPERB DIAGNOSTICS LLC","M":9},{"m":"November 2025","s":"New to ClientBill","o":"THERANOSTIX INC.","M":21,"A":2},{"m":"November 2025","s":"New to ClientBill","o":"WISE DIAGNOSTIC SYSTEMS","M":7,"A":45},{"m":"December 2025","s":"New to ClientBill","o":"AMERICAN MOLECULAR LABORATORIES INC","M":46},{"m":"December 2025","s":"New to ClientBill","o":"BRIDGE DERMATOPATHOLOGY SERVICES PLLC","M":2},{"m":"December 2025","s":"New to ClientBill","o":"EMERITUSDX","M":520,"A":93},{"m":"December 2025","s":"New to ClientBill","o":"GOLD COAST DIAGNOSTICS, LLC","M":22},{"m":"December 2025","s":"New to ClientBill","o":"LONG ISLAND PATHOLOGY","M":1},{"m":"December 2025","s":"New to ClientBill","o":"P4 CLINICAL LLC","M":92},{"m":"December 2025","s":"New to ClientBill","o":"PALM PATHOLOGY MEDICAL GROUP, A PROFESSIONAL CORPORATION","M":50},{"m":"December 2025","s":"New to ClientBill","o":"PATHOLOGY ASSOCIATES OF SOUTHERN CALIFORNIA","M":16},{"m":"December 2025","s":"New to ClientBill","o":"PLATINUM PATHOLOGY, PLLC","M":12},{"m":"December 2025","s":"New to ClientBill","o":"RABKIN DERMATOPATHOLOGY LABORATORY, PC","M":20,"A":101},{"m":"December 2025","s":"New to ClientBill","o":"SHEPARD HEALTH LLC","M":330},{"m":"December 2025","s":"New to ClientBill","o":"SOPHORA DIAGNOSTIC LABORATORY, INC.","M":393},{"m":"December 2025","s":"New to ClientBill","o":"THERANOSTIX INC.","M":54},{"m":"December 2025","s":"New to ClientBill","o":"WISE DIAGNOSTIC SYSTEMS","M":14,"A":48},{"m":"January 2026","s":"New to ClientBill","o":"AMERICAN MOLECULAR LABORATORIES INC","M":50},{"m":"January 2026","s":"New to ClientBill","o":"BRIDGE DERMATOPATHOLOGY SERVICES PLLC","M":1},{"m":"January 2026","s":"New to ClientBill","o":"EMERITUSDX","M":333,"A":48},{"m":"January 2026","s":"New to ClientBill","o":"GOLD COAST DIAGNOSTICS, LLC","M":8},{"m":"January 2026","s":"New to ClientBill","o":"MED AI DIAGNOSTICS LLC","M":1},{"m":"January 2026","s":"New to ClientBill","o":"P4 CLINICAL LLC","M":93,"A":3},{"m":"January 2026","s":"New to ClientBill","o":"PALM PATHOLOGY MEDICAL GROUP, A PROFESSIONAL CORPORATION","M":5},{"m":"January 2026","s":"New to ClientBill","o":"PATHOLOGY ASSOCIATES OF SOUTHERN CALIFORNIA","M":2},{"m":"January 2026","s":"New to ClientBill","o":"PLATINUM PATHOLOGY, PLLC","M":9},{"m":"January 2026","s":"New to ClientBill","o":"RABKIN DERMATOPATHOLOGY LABORATORY, PC","M":13,"A":37},{"m":"January 2026","s":"New to ClientBill","o":"SHEPARD HEALTH LLC","M":493},{"m":"January 2026","s":"New to ClientBill","o":"SOPHORA DIAGNOSTIC LABORATORY, INC.","M":425},{"m":"January 2026","s":"New to ClientBill","o":"SUPERB DIAGNOSTICS LLC","M":2},{"m":"January 2026","s":"New to ClientBill","o":"THERANOSTIX INC.","M":35},{"m":"January 2026","s":"New to ClientBill","o":"WISE DIAGNOSTIC SYSTEMS","M":10,"A":47},{"m":"February 2026","s":"New to ClientBill","o":"AMERICAN MOLECULAR LABORATORIES INC","M":107},{"m":"February 2026","s":"New to ClientBill","o":"BRIDGE DERMATOPATHOLOGY SERVICES PLLC","M":4},{"m":"February 2026","s":"New to ClientBill","o":"EMERITUSDX","M":375,"A":113},{"m":"February 2026","s":"New to ClientBill","o":"FREEDOM PATHOLOGY","M":1},{"m":"February 2026","s":"New to ClientBill","o":"GOLD COAST DIAGNOSTICS, LLC","M":6},{"m":"February 2026","s":"New to ClientBill","o":"P4 CLINICAL LLC","M":823,"A":2},{"m":"February 2026","s":"New to ClientBill","o":"PALM PATHOLOGY MEDICAL GROUP, A PROFESSIONAL CORPORATION","M":10},{"m":"February 2026","s":"New to ClientBill","o":"PATHOLOGY ASSOCIATES OF SOUTHERN CALIFORNIA","M":14},{"m":"February 2026","s":"New to ClientBill","o":"PLATINUM PATHOLOGY, PLLC","M":10},{"m":"February 2026","s":"New to ClientBill","o":"RABKIN DERMATOPATHOLOGY LABORATORY, PC","M":23,"A":106},{"m":"February 2026","s":"New to ClientBill","o":"SHEPARD HEALTH LLC","M":261},{"m":"February 2026","s":"New to ClientBill","o":"SOPHORA DIAGNOSTIC LABORATORY, INC.","M":416},{"m":"February 2026","s":"New to ClientBill","o":"SPECIMEN LABORATORY","M":1},{"m":"February 2026","s":"New to ClientBill","o":"THERANOSTIX INC.","M":51},{"m":"February 2026","s":"New to ClientBill","o":"WISE DIAGNOSTIC SYSTEMS","M":22,"A":44},{"m":"November 2025","s":"New to For Coding","o":"CONNECTICUT PATHOLOGY LABORATORIES, INC.","M":12,"A":28},{"m":"November 2025","s":"New to For Coding","o":"EMERITUSDX","M":2768,"X":29,"A":285},{"m":"November 2025","s":"New to For Coding","o":"FREEDOM PATHOLOGY","M":269,"X":8,"A":32},{"m":"November 2025","s":"New to For Coding","o":"GOLD COAST DIAGNOSTICS, LLC","M":331,"X":1456,"A":19},{"m":"November 2025","s":"New to For Coding","o":"HDX LABS LLC","M":11},{"m":"November 2025","s":"New to For Coding","o":"LONG ISLAND PATHOLOGY","M":168,"X":545,"A":104},{"m":"November 2025","s":"New to For Coding","o":"NJ CERTIFIED DERMATOLOGY","M":1196,"X":124,"A":24},{"m":"November 2025","s":"New to For Coding","o":"P4 CLINICAL LLC","M":412,"X":432,"A":305},{"m":"November 2025","s":"New to For Coding","o":"PLATINUM PATHOLOGY, PLLC","M":1140,"X":277,"A":488},{"m":"November 2025","s":"New to For Coding","o":"RABKIN DERMATOPATHOLOGY LABORATORY, PC","M":1648,"X":210,"A":6},{"m":"November 2025","s":"New to For Coding","o":"SHEPARD HEALTH LLC","M":2072},{"m":"November 2025","s":"New to For Coding","o":"STRAND DIAGNOSTICS","A":2},{"m":"November 2025","s":"New to For Coding","o":"SUPERB DIAGNOSTICS LLC","M":17,"A":7},{"m":"November 2025","s":"New to For Coding","o":"THERANOSTIX INC.","M":198,"X":619,"A":728},{"m":"December 2025","s":"New to For Coding","o":"CONNECTICUT PATHOLOGY LABORATORIES, INC.","M":2},{"m":"December 2025","s":"New to For Coding","o":"EMERITUSDX","M":2733,"X":31,"A":44},{"m":"December 2025","s":"New to For Coding","o":"FREEDOM PATHOLOGY","M":205,"X":14},{"m":"December 2025","s":"New to For Coding","o":"GOLD COAST DIAGNOSTICS, LLC","M":502,"X":2257,"A":27},{"m":"December 2025","s":"New to For Coding","o":"LONG ISLAND PATHOLOGY","M":303,"X":451,"A":21},{"m":"December 2025","s":"New to For Coding","o":"NJ CERTIFIED DERMATOLOGY","M":1173,"X":122,"A":9},{"m":"December 2025","s":"New to For Coding","o":"P4 CLINICAL LLC","M":474,"X":194,"A":365},{"m":"December 2025","s":"New to For Coding","o":"PLATINUM PATHOLOGY, PLLC","M":1203,"X":237,"A":614},{"m":"December 2025","s":"New to For Coding","o":"RABKIN DERMATOPATHOLOGY LABORATORY, PC","M":1884,"X":260,"A":6},{"m":"December 2025","s":"New to For Coding","o":"SHEPARD HEALTH LLC","M":2954},{"m":"December 2025","s":"New to For Coding","o":"SUPERB DIAGNOSTICS LLC","M":21,"A":5},{"m":"December 2025","s":"New to For Coding","o":"THERANOSTIX INC.","M":344,"X":949,"A":1159},{"m":"January 2026","s":"New to For Coding","o":"AERODIAGNOSTICS LLC","M":1},{"m":"January 2026","s":"New to For Coding","o":"EMERITUSDX","M":2241,"X":17,"A":3},{"m":"January 2026","s":"New to For Coding","o":"FREEDOM PATHOLOGY","M":257,"X":5},{"m":"January 2026","s":"New to For Coding","o":"GOLD COAST DIAGNOSTICS, LLC","M":441,"X":1477,"A":36},{"m":"January 2026","s":"New to For Coding","o":"LONG ISLAND PATHOLOGY","M":353,"X":313},{"m":"January 2026","s":"New to For Coding","o":"NJ CERTIFIED DERMATOLOGY","M":277,"X":25},{"m":"January 2026","s":"New to For Coding","o":"P4 CLINICAL LLC","M":305,"X":96,"A":402},{"m":"January 2026","s":"New to For Coding","o":"PLATINUM PATHOLOGY, PLLC","M":1216,"X":131,"A":638},{"m":"January 2026","s":"New to For Coding","o":"RABKIN DERMATOPATHOLOGY LABORATORY, PC","M":1513,"X":156},{"m":"January 2026","s":"New to For Coding","o":"SHEPARD HEALTH LLC","M":2745},{"m":"January 2026","s":"New to For Coding","o":"SUPERB DIAGNOSTICS LLC","M":9},{"m":"January 2026","s":"New to For Coding","o":"THERANOSTIX INC.","M":531,"X":537,"A":696},{"m":"February 2026","s":"New to For Coding","o":"SHEPARD HEALTH LLC","M":4077},{"m":"February 2026","s":"New to For Coding","o":"NJ CERTIFIED DERMATOLOGY","M":2},{"m":"February 2026","s":"New to For Coding","o":"THERANOSTIX INC.","M":820,"X":27,"A":584},{"m":"February 2026","s":"New to For Coding","o":"P4 CLINICAL LLC","M":590,"X":11,"A":267},{"m":"February 2026","s":"New to For Coding","o":"LONG ISLAND PATHOLOGY","M":468,"X":2,"A":16},{"m":"February 2026","s":"New to For Coding","o":"EMERITUSDX","M":2978,"A":40},{"m":"February 2026","s":"New to For Coding","o":"FREEDOM PATHOLOGY","M":330,"A":22},{"m":"February 2026","s":"New to For Coding","o":"PLATINUM PATHOLOGY, PLLC","M":1128,"X":6,"A":406},{"m":"February 2026","s":"New to For Coding","o":"RABKIN DERMATOPATHOLOGY LABORATORY, PC","M":2320},{"m":"February 2026","s":"New to For Coding","o":"PALM PATHOLOGY MEDICAL GROUP, A PROFESSIONAL CORPORATION","M":4},{"m":"February 2026","s":"New to For Coding","o":"SUPERB DIAGNOSTICS LLC","M":61},{"m":"February 2026","s":"New to For Coding","o":"GOLD COAST DIAGNOSTICS, LLC","M":1003,"X":1594,"A":42},{"m":"February 2026","s":"New to For Coding","o":"AMERICAN MOLECULAR LABORATORIES INC","M":84},{"m":"February 2026","s":"New to For Coding","o":"AERODIAGNOSTICS LLC","M":4}];
+
+function expandAggregates(aggs) {
+  const rows = [];
+  aggs.forEach(a => {
+    const manualCount    = a.M || 0;
+    const mixedCount     = a.X || 0;
+    const automatedCount = a.A || 0;
+    let i = 0;
+    for (; i < manualCount; i++) {
+      rows.push({
+        claim_id: `${a.m}|${a.s}|${a.o}|M|${i}`,
+        organization_name: a.o,
+        stage: a.s,
+        touch_status: 'Manual',
+        transition_occurrences: 1,
+        month_key: a.m
+      });
+    }
+    for (let j = 0; j < mixedCount; j++) {
+      rows.push({
+        claim_id: `${a.m}|${a.s}|${a.o}|X|${j}`,
+        organization_name: a.o,
+        stage: a.s,
+        touch_status: 'Mixed',
+        transition_occurrences: 2,
+        month_key: a.m
+      });
+    }
+    for (let k = 0; k < automatedCount; k++) {
+      rows.push({
+        claim_id: `${a.m}|${a.s}|${a.o}|A|${k}`,
+        organization_name: a.o,
+        stage: a.s,
+        touch_status: 'Automated',
+        transition_occurrences: 1,
+        month_key: a.m
+      });
+    }
+  });
+  return rows;
+}
+
+function loadBaseline() {
+  const baselineRows = expandAggregates(BASELINE_AGGREGATES);
+  state.rows.push(...baselineRows);
+}
+
+// Display helper — short month name for UI (data stays as "November 2025" internally)
+function formatMonth(m) {
+  if (!m) return m;
+  const parts = m.split(' ');
+  if (parts.length !== 2) return m;
+  const shortName = parts[0].slice(0, 3);
+  return `${shortName} ${parts[1]}`;
+}
+
 let charts = { donut: null, stage: null, orgStack: null, trend: null };
 
 // Colors used by Chart.js
@@ -1592,7 +1654,7 @@ function refreshUI() {
     months.forEach(m => {
       const c = document.createElement('div');
       c.className = 'drawer-chip';
-      c.innerHTML = `<span>${m}</span><span class="remove" title="Remove" onclick="removeMonth('${m.replace(/'/g, "\\'")}')">×</span>`;
+      c.innerHTML = `<span>${formatMonth(m)}</span><span class="remove" title="Remove" onclick="removeMonth('${m.replace(/'/g, "\\'")}')">×</span>`;
       drawerChips.appendChild(c);
     });
   }
@@ -1602,13 +1664,13 @@ function refreshUI() {
   monthSel.innerHTML = '<option value="__all__">All</option>';
   months.forEach(m => {
     const opt = document.createElement('option');
-    opt.value = m; opt.textContent = m;
+    opt.value = m; opt.textContent = formatMonth(m);
     monthSel.appendChild(opt);
   });
   if (!state.filters.month || (state.filters.month !== '__all__' && !months.includes(state.filters.month))) {
-    state.filters.month = months[months.length - 1] || null;
+    state.filters.month = '__all__';
   }
-  monthSel.value = state.filters.month || '';
+  monthSel.value = state.filters.month || '__all__';
 
   // Stage select
   const stageSel = document.getElementById('stage-select');
@@ -1865,7 +1927,7 @@ function renderTrendChart() {
   charts.trend = new Chart(document.getElementById('chart-trend'), {
     type: 'bar',
     data: {
-      labels: series.map(s => s.month),
+      labels: series.map(s => formatMonth(s.month)),
       datasets: [
         {
           type: 'bar',
@@ -2159,6 +2221,18 @@ document.addEventListener('keydown', (e) => {
     closeDrawer();
   }
 });
+
+// =====================================================
+// Auto-load baseline on page open
+// =====================================================
+(function initBaseline() {
+  try {
+    loadBaseline();
+    refreshUI();
+  } catch (err) {
+    console.error('Baseline load failed:', err);
+  }
+})();
 </script>
 
 </body>
